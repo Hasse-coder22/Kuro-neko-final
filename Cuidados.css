@@ -51,24 +51,19 @@
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
   }
-  
   .logo {
     display: flex;
     align-items: center;
     gap: 15px;
   }
-  
   .logo-img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     transition: all 0.3s ease;
-    filter: drop-shadow(0 0 10px rgba(204, 0, 204, 0.5));
   }
-  
   .logo-img:hover {
     transform: rotate(5deg) scale(1.1);
-    filter: drop-shadow(0 0 15px rgba(204, 0, 204, 0.8));
   }
   
   .logo a {
@@ -82,7 +77,6 @@
   
   .logo a:hover {
     color: var(--magenta-claro);
-    text-shadow: 0 0 15px var(--magenta-neon);
   }
   
   .nav {
@@ -371,7 +365,7 @@
     justify-content: center;
     width: 45px;
     height: 45px;
-    background: var(--degradado-magenta);
+    background: var(--blanco);
     color: var(--blanco);
     border-radius: 50%;
     text-align: center;
