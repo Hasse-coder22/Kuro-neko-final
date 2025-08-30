@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuro Neko Tattoo - Estudio de Tatuajes y Piercings</title>
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Iconos de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Librería AOS para animaciones al hacer scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- ===== EFECTO DE PARTÍCULAS EN FONDO ===== -->
+    <div id="particles-js"></div>
+
+    <!-- ===== BOTÓN FLOTANTE DE WHATSAPP ===== -->
+    <a href="https://wa.me/56954165536?text=Hola%20Kuro%20Neko%20Tattoo,%20me%20interesa%20obtener%20más%20información" class="floating-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ===== HEADER CON LOGO Y NAVEGACIÓN ===== -->
+    <header>
+        <div class="container header-container">
+            <div class="logo-container">
+                <img src="img/kuronekologo.jpg" alt="Kuro Neko Logo" class="logo-img">
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#cuidados">Cuidados</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+                <li><a href="#reseñas">Reseñas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="inicio" role="banner">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>KURO NEKO Tattoos, Piercings Y Microdermal</h1>
+            <p>Bienvenido a Kuro Neko Tattoo y Piercing, tu estudio de tatuaje y piercing de confianza en San Felipe. Ofrecemos servicios de alta calidad y profesionales experimentados en tatuaje, piercing y microdermal. ¿Estás listo para expresar tu estilo y personalidad? Explora nuestros servicios y trabajos, o contáctanos para obtener más información.</p>
+            
+            <div class="whatsapp-buttons">
+              
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN DE SERVICIOS ===== -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <h2 data-aos="fade-up">Nuestros Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Tatuajes</h3>
+                    <p>Diseños personalizados y de catálogo realizados con técnica profesional y materiales de primera calidad.</p>
+                    <a href="https://wa.me/56954165536?text=Hola%20Kuro%20Neko%20Tattoo,%20quiero%20información%20sobre%20tatuajes" class="whatsapp-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Consultar
+                    </a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Piercings</h3>
+                    <p>Variedad de perforaciones corporales realizadas con instrumentación estéril y descartable.</p>
+                    <a href="https://wa.me/56954165536?text=Hola%20Kuro%20Neko%20Tattoo,%20quiero%20información%20sobre%20piercings" class="whatsapp-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Consultar
+                    </a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Garantia</h3>
+                    <p>Son sesiones de revisión o seguimiento del cuidado, ya sea de la limpieza o de la detección de alguna anormalidad en el piercing.</p>
+                    <a href="https://wa.me/56954165536?text=Hola%20Kuro%20Neko%20Tattoo,%20quiero%20información%20sobre%20la%20garantía" class="whatsapp-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Consultar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GALERÍA ===== -->
+    <section class="gallery" id="galeria">
+        <div class="container">
+            <h2 data-aos="fade-up">Nuestros Trabajos</h2>
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="tattoo">Tatuajes</button>
+                <button class="filter-btn" data-filter="piercing">Piercings</button>
+            </div>
+            <div class="gallery-grid">
+                <!-- Las imágenes se cargarán dinámicamente desde Instagram o se agregarán manualmente -->
+                <div class="gallery-item" data-category="tattoo" data-title="Dragón Japonés" data-story=" Dragon oriental, diseño a pedido, gracias totales por la oportunidad y el gran aguante.">
+                    <img src="img-tatu/dragonrojo.jpg" alt="Tatuaje Kuro Neko">
+                </div>
+                <div class="gallery-item" data-category="tattoo" data-title="Flor de Loto" data-story="Inosuke Hashibira, de demon slayer, gran personaje, gracias @d.boeee por la confianza y la buena onda de siempre.">
+                    <img src="img-tatu/inosuke.heic" alt="Tatuaje Kuro Neko">
+                </div>
+                <div class="gallery-item" data-category="tattoo" data-title="Geométrico Felino" data-story="Este diseño geométrico con forma de felino fue creado para un amante de los gatos que quería algo moderno y abstracto. Las líneas limpias y los patrones simétricos representan el equilibrio entre la naturaleza salvaje del animal y la precisión del diseño matemático.">
+                    <img src="img/Así comenzó marzo, un papá chocho celebrando el nacimiento de su bebé, gracias por dejarnos ser.webp" alt="Piercing Kuro Neko">
+                </div>
+                <div class="gallery-item" data-category="tattoo" data-title="Manga Completo" data-story="Este manga completo tomó varias sesiones para completarse. El cliente quería una narrativa continua que representara su viaje personal, incorporando elementos de la naturaleza, criaturas mitológicas y símbolos significativos para él. Cada elemento fue cuidadosamente planeado para crear una historia cohesiva.">
+                    <img src="img/Diseño floral a color, a Noruega se va estos detalles , diseño personalizado, gracias por al co.webp" alt="Tatuaje Kuro Neko">
+                </div>
+                <div class="gallery-item" data-category="tattoo" data-title="Tatuaje Minimalista" data-story="Este diseño minimalista fue creado para un cliente que prefería algo discreto pero significativo. Las líneas simples representan las constelaciones bajo las cuales nacieron sus hijos, haciendo del tatuaje un recordatorio personal de su familia.">
+                    <img src="img/Screenshot 2025-08-29 184035.png" alt="Piercing Kuro Neko">
+                </div>
+                <div class="gallery-item" data-category="tattoo" data-title="Tatuaje Tradicional" data-story="Nuevo cover up en grises, el cliente quería un joker, pero no el habitual, quería algo más oscuro, gracias por la confianza.">
+                    <img src="img-tatu/joker.webp" alt="Tatuaje Kuro Neko">
+                </div>
+                <div class="gallery-item" data-category="tattoo" data-title="Retrato Realista" data-story="Esta delicada flor y sus 3 pequeñas hijas simbolizan la belleza y la complejidad de ser mamá. Cada pétalo y cada detalle representa el amor y el sacrificio que implica cuidar y criar a nuestros hijos.
+Ser mamá es un trabajo de arte, lleno de colores vibrantes y momentos grises. Pero en cada instante, vale la pena.">
+                    <img src="img-tatu/3hijas.webp" alt="Tatuaje Kuro Neko">
+                </div>
+                <div class="gallery-item" data-category="tattoo" data-title="Diseño Abstracto" data-story="Hace 27 años, nuestra clienta se hizo un tatuaje que nunca le gustó y que la hizo sentir incómoda con su propio cuerpo. No se atrevía a usar vestidos o mostrarse con confianza.
+Pero hoy, después de un proceso de cover up, puede decir adiós a aquel diseño que la hacía sentir mal consigo misma y hola a un hermoso ramo de girasoles en grises que la hace sentir radiante y segura!
+El poder de los tatuajes no solo está en la estética, sino también en la emoción y la confianza que pueden generar.">
+                    <img src="img-tatu/flore.jpg" alt="Tatuaje Kuro Neko">
+                </div>
+                <div class="gallery-item" data-category="tattoo" data-title="Piercing de Labio" data-story="[COVER UP] ¡Descubre el poder transformador del tatuaje! Nuestra clienta llegó a nuestro estudio con una mariposa que nunca le gustó, después de 20 años de llevarla en su piel. Pero hoy, esa mariposa se convirtió en algo completamente nuevo y significativo: una tortuga.
+La Tortuga: Un Símbolo de Familia y Protección">
+                    <img src="img-tatu/tortuga.webp" alt="Tatuaje Kuro Neko">
+                </div>
+                <div class="gallery-item" data-category="tattoo" data-title="Microdermal" data-story="Cover up, Mes de los michis, me emocionan estás pegas, gracias compita por la confianza y la buena onda, mucho animo y éxito campeón...">
+                    <img src="img-tatu/gatonegro.heic" alt="Tatuaje Kuro Neko">
+                </div>
+                <div class="gallery-item" data-category="tattoo" data-title="Helix Superior" data-story="Homenaje a un amigo fiel. Acabo de terminar este tatuaje lineal conmemorativo para un cliente que perdió a su gato. La simplicidad y la elegancia de la técnica lineal permiten capturar la esencia de este ser querido.
+Me encanta saber que mi arte puede ayudar a las personas a recordar y honrar a sus seres queridos.">
+                    <img src="img-tatu/homenaje.webp" alt="Tatuaje Kuro Neko">
+                </div>
+                <div class="gallery-item" data-category="tattoo" data-title="Helix Superior" data-story="">
+                    <img src="img-tatu/flore2.webp" alt="Tatuaje Kuro Neko">
+                </div>
+                <div class="gallery-item" data-category="piercing" data-title="Aro de Lóbulo" data-story="Aro de Lóbulo
+¡Luce un estilo clásico y elegante! Nuestros aros de lóbulo están hechos con materiales de calidad, como titanio y acero quirúrgico, para mayor seguridad y comodidad.">
+                    <img src="img-tatu/lobulo.webp" alt="Tatuaje Kuro Neko">
+                </div>
+                <div class="gallery-item" data-category="piercing" data-title="Microdermal" data-story="Microdermal de Titanio
+¡Destaca con un piercing único y elegante! Nuestros microdermales de titanio grado médico son seguros, duraderos y perfectos para cualquier estilo.">
+                    <img src="img/microdermal.png" alt="Tatuaje Kuro Neko">
+                </div>
+                <div class="gallery-item" data-category="piercing" data-title="Piercing de Ceja" data-story="Piercing de Ceja
+¡Atrévete a destacar con un estilo moderno y único! Nuestros piercings de ceja están hechos con materiales de calidad, como titanio y acero quirúrgico, para mayor seguridad y comodidad.">
+                    <img src="img-prg/ceja.png" alt="Tatuaje Kuro Neko">
+                </div>
+                <div class="gallery-item" data-category="piercing" data-title="Nostril" data-story="¡No te pierdas la oportunidad de lucir un aro de nariz único y elegante! Hecho con materiales de alta calidad e hipoalergénicos, diseñado para resaltar tu personalidad y tu look.">
+                    <img src="img-prg/nariz.png" alt="Tatuaje Kuro Neko">
+                </div>
+                <div class="gallery-item" data-category="piercing" data-title="Helix Superior" data-story="Este conjunto de piercings helix fue realizado en una sola sesión. La colocación precisa y el ángulo correcto son esenciales para la curación adecuada y el comfort a largo plazo. La cliente eligió joyería coordinada para crear un efecto de constelación.">
+                    <img src="img-prg/helixarriba.png" alt="Tatuaje Kuro Neko">
+                </div>
+                <div class="gallery-item" data-category="piercing" data-title="Lóbulo Superior" data-story="">
+                    <img src="img-prg/expancion.png" alt="Tatuaje Kuro Neko">
+                </div>
+            </div>
+            <div style="margin-top: 30px;">
+                <a href="https://www.instagram.com/kuro.neko.tattoo/" class="btn" target="_blank">Ver más en Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MODAL PARA HISTORIAS DE TATUAJES ===== -->
+    <div class="tattoo-modal" id="tattooModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modalTitle">Título del Tatuaje</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalImage" src="" alt="Tatuaje detalle">
+                </div>
+                <div class="modal-story">
+                    <p id="modalStory">Historia del tatuaje aparecerá aquí...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== SECCIÓN DE CUIDADOS ===== -->
+    <section class="aftercare" id="cuidados">
+        <div class="container">
+            <h2 data-aos="fade-up">Cuidados Post-Tatuaje/Piercing</h2>
+            <div class="aftercare-content" data-aos="fade-up" data-aos-delay="100">
+                <p>En Kuro Neko nos preocupamos por tu bienestar después de cada procedimiento. Ofrecemos <strong>limpieza gratuita después de 20 días</strong> de haberte realizado un tatuaje o piercing para asegurar una correcta cicatrización.</p>
+                <p>Nuestros profesionales te entregarán instrucciones detalladas para el cuidado de tu nuevo arte corporal y estarán disponibles para resolver cualquier consulta durante el proceso de curación.</p>
+                <a href="Cuidados.html" class="btn" target="_blank">
+                    <i class="fas fa-info-circle"></i> Más detalles sobre cuidados
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN DE MAPA ===== -->
+    <section class="map-section" id="ubicacion">
+        <div class="map-overlay"></div>
+        <div class="container">
+            <div class="map-content">
+                <h2 data-aos="fade-up">Nuestra Ubicación</h2>
+                <p data-aos="fade-up" data-aos-delay="100">Visítanos en nuestro estudio en San Felipe</p>
+                <div class="map-container" data-aos="zoom-in" data-aos-delay="200">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d332.07328045194445!2d-70.72095149999999!3d-32.7511057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968817004481e719%3A0xb5a4030af4674f77!2sPiercing%20y%20tattoo%20Kuro%20Neko%20Estudio!5e0!3m2!1ses!2scl!4v1691690400000!5m2!1ses!2scl"
+                        width="100%"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        title="Mapa ubicación Kuro Neko en San Felipe"
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN DE RESEÑAS ===== -->
+    <section class="reviews" id="reseñas">
+        <div class="container">
+            <h2>Opiniones de Nuestros Clientes</h2>
+            <!-- Widget de reseñas de Google -->
+            <script src="https://elfsightcdn.com/platform.js" async></script>
+            <div class="elfsight-app-02aff770-417e-4311-b3ce-5064d9b41fcc" data-elfsight-app-lazy></div>
+            <div style="margin-top: 20px;"></div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section" data-aos="fade-up">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> San Felipe, Chile</p>
+                    <p><i class="fas fa-phone"></i> +56 9 5416 5536</p>
+                    <p><i class="fas fa-envelope"></i> kuronekotattoo@email.com</p>
+                </div>
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Horario</h3>
+                    <p>Lunes a Viernes: 10:00 - 19:00</p>
+                    <p>Sábados: 11:00 - 17:00</p>
+                    <p>Domingos: Cerrado</p>
+                </div>
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Síguenos</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/kuro.neko.tattoo/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/56954165536" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.tiktok.com/@tu_usuario" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright" data-aos="fade-up" data-aos-delay="300">
+                <p>&copy; 2025 Kuro Neko Tattoo & Piercing. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        // Inicializar AOS (Animate On Scroll)
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Inicializar partículas en el fondo
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: "#cc00cc" },
+                shape: { type: "circle" },
+                opacity: { value: 0.5, random: true },
+                size: { value: 3, random: true },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: "#8b008b",
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: "none",
+                    random: true,
+                    straight: false,
+                    out_mode: "out",
+                    bounce: false
+                }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: {
+                    onhover: { enable: true, mode: "repulse" },
+                    onclick: { enable: true, mode: "push" },
+                    resize: true
+                }
+            },
+            retina_detect: true
+        });
+
+        // Menú móvil - toggle para mostrar/ocultar
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            menuToggle.querySelector('i').classList.toggle('fa-bars');
+            menuToggle.querySelector('i').classList.toggle('fa-times');
+        });
+        
+        // Cerrar menú al hacer clic en un enlace
+        const navLinks = document.querySelectorAll('.nav-menu a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                menuToggle.querySelector('i').classList.add('fa-bars');
+                menuToggle.querySelector('i').classList.remove('fa-times');
+            });
+        });
+        
+        // Filtro de galería
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remover clase active de todos los botones
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Agregar clase active al botón clickeado
+                button.classList.add('active');
+                
+                const filter = button.getAttribute('data-filter');
+                
+                // Mostrar/ocultar elementos según filtro
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                        // Reactivar animación
+                        item.classList.remove('aos-animate');
+                        setTimeout(() => {
+                            item.classList.add('aos-animate');
+                        }, 50);
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Smooth scrolling para anclas
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Modal para historias de tatuajes
+        const tattooModal = document.getElementById('tattooModal');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalImage = document.getElementById('modalImage');
+        const modalStory = document.getElementById('modalStory');
+        const closeModal = document.querySelector('.close-modal');
+        
+        // Abrir modal al hacer clic en un elemento de la galería
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const title = item.getAttribute('data-title');
+                const story = item.getAttribute('data-story');
+                const imageSrc = item.querySelector('img').src;
+                
+                modalTitle.textContent = title;
+                modalImage.src = imageSrc;
+                modalImage.alt = title;
+                modalStory.textContent = story;
+                
+                tattooModal.style.display = 'block';
+                document.body.style.overflow = 'hidden'; // Prevenir scroll
+            });
+        });
+        
+        // Cerrar modal
+        closeModal.addEventListener('click', () => {
+            tattooModal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Permitir scroll nuevamente
+        });
+        
+        // Cerrar modal al hacer clic fuera del contenido
+        tattooModal.addEventListener('click', (e) => {
+            if (e.target === tattooModal) {
+                tattooModal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+        
+        // Cerrar modal con tecla Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && tattooModal.style.display === 'block') {
+                tattooModal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Efecto de escritura en el título principal
+        const heroTitle = document.querySelector('.hero-content h1');
+        if (heroTitle) {
+            const originalText = heroTitle.textContent;
+            heroTitle.textContent = '';
+            let i = 0;
+            const typeWriter = () => {
+                if (i < originalText.length) {
+                    heroTitle.textContent += originalText.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 50);
+                }
+            };
+            setTimeout(typeWriter, 1000);
+        }
+    </script>
+</body>
+</html>
