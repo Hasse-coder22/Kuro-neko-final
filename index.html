@@ -17,8 +17,7 @@
 
 </head>
 <body>
-    <!-- ===== EFECTO DE PARTÍCULAS EN FONDO ===== -->
-    <div id="particles-js"></div>
+    
 
     <!-- ===== HEADER CON LOGO Y NAVEGACIÓN ===== -->
     <header>
@@ -62,9 +61,7 @@
                     </div>
                     <h3>Tatuajes</h3>
                     <p>Diseños personalizados y de catálogo realizados con técnica profesional y materiales de primera calidad.</p>
-                    <a href="https://wa.me/56954165536?text=Hola%20Kuro%20Neko%20Tattoo,%20quiero%20información%20sobre%20tatuajes" class="whatsapp-btn" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Consultar
-                    </a>
+                    
                 </div>
                 <div class="service-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="service-icon">
@@ -72,19 +69,15 @@
                     </div>
                     <h3>Piercings</h3>
                     <p>Variedad de perforaciones corporales realizadas con instrumentación estéril y descartable.</p>
-                    <a href="https://wa.me/56954165536?text=Hola%20Kuro%20Neko%20Tattoo,%20quiero%20información%20sobre%20piercings" class="whatsapp-btn" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Consultar
-                    </a>
+                    
                 </div>
                 <div class="service-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="service-icon">
                         <i class="fas fa-star"></i>
                     </div>
                     <h3>Garantia</h3>
-                    <p>Son sesiones de revisión o seguimiento del cuidado, ya sea de la limpieza o de la detección de alguna anormalidad en el piercing.</p>
-                    <a href="https://wa.me/56954165536?text=Hola%20Kuro%20Neko%20Tattoo,%20quiero%20información%20sobre%20la%20garantía" class="whatsapp-btn" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Consultar
-                    </a>
+                    <p>Son sesiones de revisión y seguimiento <strong>(apartir de 20 dias)</strong> tanto para piercings como para tatuajes. Se evalúa la cicatrización, la limpieza y la detección de posibles anormalidades, además de reforzar colores, líneas o detalles para mantener la idea original y la mejor estética de tu modificación corporal.</p>
+                
                 </div>
             </div>
         </div>
@@ -256,7 +249,7 @@ Me encanta saber que mi arte puede ayudar a las personas a recordar y honrar a s
                         <a href="https://www.instagram.com/kuro.neko.tattoo/" target="_blank"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://wa.me/56954165536" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                        <a href="https://www.tiktok.com/@tu_usuario" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.tiktok.com/@kuro.neko.tattoo" target="_blank"><i class="fab fa-tiktok"></i></a>
                     </div>
                 </div>
             </div>
@@ -269,6 +262,14 @@ Me encanta saber que mi arte puede ayudar a las personas a recordar y honrar a s
             </div>
         </div>
     </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+<div class="whatsapp-float" id="whatsappFloat">
+    <a href="https://wa.me/56954165536?text=Hola%20Kuro%20Neko%20Tattoo%20y%20Piercing%20quiero%20más%20información%20sobre%20tus%20servicios%20" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</div>
+<div class="whatsapp-tooltip" id="whatsappTooltip">¡Contáctanos por WhatsApp!</div>
 
     <!-- ===== SCRIPTS ===== -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -391,6 +392,30 @@ Me encanta saber que mi arte puede ayudar a las personas a recordar y honrar a s
                 document.body.style.overflow = 'auto';
             }
         });
+        
+    // Control para el tooltip de WhatsApp en dispositivos táctiles
+    const whatsappFloat = document.getElementById('whatsappFloat');
+    const whatsappTooltip = document.getElementById('whatsappTooltip');
+    let tooltipTimeout;
+    
+    // Mostrar tooltip al tocar en dispositivos móviles
+    whatsappFloat.addEventListener('touchstart', function(e) {
+        e.preventDefault();
+        clearTimeout(tooltipTimeout);
+        whatsappTooltip.style.opacity = '1';
+        whatsappTooltip.style.visibility = 'visible';
+        whatsappTooltip.style.transform = 'translateY(0)';
+    });
+    
+    // Ocultar tooltip después de un tiempo
+    whatsappFloat.addEventListener('touchend', function() {
+        tooltipTimeout = setTimeout(function() {
+            whatsappTooltip.style.opacity = '0';
+            whatsappTooltip.style.visibility = 'hidden';
+            whatsappTooltip.style.transform = 'translateY(10px)';
+        }, 2000);
+    });
+
     </script>
 </body>
 </html>
