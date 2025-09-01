@@ -11,75 +11,32 @@
 <link rel="stylesheet" href="Cuidados.css">
 </head>
 <body>
-  <!-- ===== EFECTO DE PARTÍCULAS EN FONDO ===== -->
-  <div id="particles-js"></div>
+  
 
   <!-- ===== BOTÓN VOLVER ARRIBA ===== -->
-  <a href="#" class="back-to-top">
+  <a href="#cuidadotattoo" class="back-to-top">
     <i class="fas fa-arrow-up"></i>
   </a>
 
   <!-- Encabezado -->
-  <header class="header">
-    <div class="logo">
+<header class="header">
+  <div class="logo">
+    <a href="index.html"> <!-- Enlace al index -->
       <img src="/img/kuronekologo.jpg" alt="Logo Kuroneko" class="logo-img" />
-      <a href="index.html">KURO NEKO</a>
-    </div>
-    <nav class="nav" aria-label="Menú principal">
-      <a href="#tattoo">Tattoo</a>
-      <a href="#piercing">Piercing</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-  </header>
+    </a>
+  </div>
+  <nav class="nav" aria-label="Menú principal">
+
+    <a href="#cuidadotattoo">Tattoo</a>
+    <a href="#piercing">Piercing</a>
+  </nav>
+</header>
 
   <main>
-    <!-- Sección Tattoo -->
-    <section id="tattoo" class="content-box" aria-label="Guía para clientes de tatuajes" data-aos="fade-up">
-      <h2 class="section-title">Guía para clientes de tatuajes</h2>
-      <p class="mb-4 italic">
-        Bienvenido a nuestro estudio de tatuajes. Estamos emocionados de trabajar contigo para crear un tatuaje único y personalizado.
-      </p>
-
-      <div class="two-column">
-        <div>
-          <h3>Preparación para la cita</h3>
-          <ol class="mb-6">
-            <li>Investiga y selecciona un diseño que se adapte a tus gustos.</li>
-            <li>Consulta con nuestro equipo ante cualquier duda.</li>
-            <li>Prepara tus preguntas sobre el proceso.</li>
-            <li>Llega al menos 15 minutos antes para completar formularios.</li>
-            <li>
-              Tips para el día de la cita:
-              <ul class="mt-2">
-                <li>Condiciones físicas: estar saludable.</li>
-                <li>No consumir drogas o alcohol antes de la cita.</li>
-                <li>Ropa cómoda que facilite el acceso al área.</li>
-                <li>Puedes venir acompañado.</li>
-                <li>Hidratación: bebe suficiente agua.</li>
-                <li>Alimentación ligera.</li>
-                <li>Puntualidad.</li>
-              </ul>
-            </li>
-          </ol>
-        </div>
-        <div>
-          <h3>Durante y después de la cita</h3>
-          <p><strong>Durante la cita:</strong> Comunica cualquier incomodidad o dolor y sigue las instrucciones del equipo.</p>
-          <p class="mt-4"><strong>Después de la cita:</strong></p>
-          <ol class="mt-2">
-            <li>Sigue instrucciones de cuidado posterior.</li>
-            <li>Mantén el tatuaje limpio y seco.</li>
-            <li>Evita exposición al sol directo las primeras semanas.</li>
-          </ol>
-        </div>
-      </div>
-    </section>
-
     <!-- Sección Cuidados Tattoo -->
     <section id="cuidadotattoo" class="content-box" aria-label="Cuidados para tu nuevo tattoo" data-aos="fade-up" data-aos-delay="100">
       <h2 class="section-title">Cuidados para tu nuevo tattoo</h2>
       <p>Para asegurar una curación segura y rápida, sigue estos consejos:</p>
-
       <div class="two-column mt-4">
         <div>
           <h3>Cuidados del tatuaje</h3>
@@ -177,12 +134,6 @@
       </div>
     </section>
 
-    <!-- Sección Contacto -->
-    <section id="contacto" class="content-box" aria-label="Contacto" data-aos="fade-up" data-aos-delay="300">
-      <h2 class="section-title">Contacto</h2>
-      <p>Puedes comunicarte con nosotros vía Instagram o visitando el estudio.</p>
-      <p class="mt-2"><a href="https://www.instagram.com/kuro.neko.tattoo/" target="_blank" style="color: var(--magenta-claro); text-decoration: underline;">Instagram @kuro.neko.tattoo</a></p>
-    </section>
   </main>
 
   <!-- ===== FOOTER ===== -->
@@ -212,7 +163,11 @@
         </div>
       </div>
       <div class="copyright">
-        <p>&copy; 2025 Kuro Neko Tattoo & Piercing. Todos los derechos reservados.</p>
+         <p>
+  © 2025 Kuro Neko Tattoo & Piercing. Todos los derechos reservados 
+  <a href="https://github.com/sseketuDev" target="_blank">sseketu</a> y 
+  <a href="https://github.com/Hasse-coder22" target="_blank">Hassecoder22</a>.
+</p>
       </div>
     </div>
   </footer>
@@ -227,43 +182,7 @@
       once: true,
       offset: 100
     });
-
-    // Inicializar partículas en el fondo
-    particlesJS('particles-js', {
-      particles: {
-        number: { value: 60, density: { enable: true, value_area: 800 } },
-        color: { value: "#cc00cc" },
-        shape: { type: "circle" },
-        opacity: { value: 0.5, random: true },
-        size: { value: 3, random: true },
-        line_linked: {
-          enable: true,
-          distance: 150,
-          color: "#8b008b",
-          opacity: 0.4,
-          width: 1
-        },
-        move: {
-          enable: true,
-          speed: 2,
-          direction: "none",
-          random: true,
-          straight: false,
-          out_mode: "out",
-          bounce: false
-        }
-      },
-      interactivity: {
-        detect_on: "canvas",
-        events: {
-          onhover: { enable: true, mode: "repulse" },
-          onclick: { enable: true, mode: "push" },
-          resize: true
-        }
-      },
-      retina_detect: true
-    });
-
+   
     // Efecto de scroll suave para los enlaces de navegación
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
@@ -290,6 +209,31 @@
         backToTop.style.display = 'none';
       }
     });
+   
+  // ===== RESALTAR ENLACE SEGÚN SECCIÓN VISIBLE =====
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('.nav a');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.offsetHeight;
+      if (pageYOffset >= sectionTop - sectionHeight / 3) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === `#${current}`) {
+        link.classList.add('active');
+      }
+    });
+  });
+
+
   </script>
 </body>
 </html>
