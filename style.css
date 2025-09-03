@@ -112,7 +112,7 @@ header {
 }
 
 .logo-container {
-    margin-bottom: 10px;
+    flex: 0 0 auto;
 }
 
 .logo-img {
@@ -123,7 +123,7 @@ header {
     display: flex;
     list-style: none;
     gap: 25px;
-    justify-content: center;
+    justify-content: flex-end; /* Empujar elementos a la derecha */
     padding: 0;
     margin: 0;
 }
@@ -150,8 +150,14 @@ header {
     width: 100%;
 }
 
+
 .menu-toggle {
-    display: none;
+    display: block;       /* ✅ Mostrar en móvil */
+    position: absolute;   /* ✅ Lo posicionamos dentro del header */
+    right: 20px;          /* Pegado a la derecha */
+    font-size: 28px;      /* Tamaño del ícono */
+    cursor: pointer;
+    color: var(--blanco);
 }
 
 /* ===== HERO SECTION OPTIMIZADA ===== */
@@ -174,7 +180,6 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(83, 5, 53, 0.3) 0%, rgba(0, 0, 0, 0.8) 100%);
     z-index: 2;
 }
 
@@ -200,7 +205,7 @@ header {
 
 /* ===== SECCIÓN DE SERVICIOS OPTIMIZADA ===== */
 .services {
-    background-color: var(--gris-oscuro);
+    background-color: var(--negro);
     position: relative;
     overflow: hidden;
 }
@@ -214,13 +219,13 @@ header {
 }
 
 .service-card {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #530535;
     padding: 40px 30px;
     border-radius: 15px;
     text-align: center;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     border: 1px solid var(--magenta-oscuro);
-    box-shadow: 0 10px 30px rgba(83, 5, 53, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     position: relative;
@@ -467,7 +472,6 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(83, 5, 53, 0.3) 0%, rgba(0, 0, 0, 0.8) 100%);
     z-index: 2;
 }
 
@@ -788,4 +792,9 @@ footer {
     .gallery-item {
         height: 250px;
     }
+}
+.service-icon img {
+    width: 60px;     /* ajusta tamaño */
+    height: 60px;    /* ajusta tamaño */
+    object-fit: contain;
 }
