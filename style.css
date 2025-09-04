@@ -122,16 +122,17 @@ header {
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 25px;
+    gap: 45px;
     justify-content: flex-end; /* Empujar elementos a la derecha */
     padding: 0;
-    margin: 0;
+    margin: 250;
+    
 }
 
 .nav-menu a {
     color: var(--blanco);
     font-weight: 500;
-    padding: 10px 0;
+    padding: 15px 0;
     position: relative;
 }
 
@@ -152,12 +153,15 @@ header {
 
 
 .menu-toggle {
-    display: block;       /* ✅ Mostrar en móvil */
-    position: absolute;   /* ✅ Lo posicionamos dentro del header */
-    right: 20px;          /* Pegado a la derecha */
-    font-size: 30px;      /* Tamaño del ícono */
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 50%;           /* centrado vertical */
+    transform: translateY(-50%);
+    font-size: 30px;
     cursor: pointer;
     color: var(--blanco);
+    z-index: 1010;      /* más alto que el header para que siempre se vea */
 }
 
 /* ===== HERO SECTION OPTIMIZADA ===== */
