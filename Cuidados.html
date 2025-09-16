@@ -12,8 +12,6 @@
 </head>
 <body>
 
-
-
     <!-- ===== BOTÓN VOLVER ARRIBA ===== -->
     <a href="#cuidadotattoo" class="back-to-top">
         <i class="fas fa-arrow-up"></i>
@@ -29,6 +27,7 @@
         <nav class="nav" aria-label="Menú principal">
             <a href="#cuidadotattoo">Tattoo</a>
             <a href="#piercing">Piercing</a>
+            <a href="#microdermal">Microdermal</a>
         </nav>
     </header>
     
@@ -139,6 +138,102 @@
                 </div>
             </div>
         </section>
+        <main>
+   
+
+    <!-- Sección Microdermal -->
+    <section id="microdermal" class="content-box" aria-label="Cuidados para tu nuevo microdermal" data-aos="fade-up" data-aos-delay="300">
+        <h2 class="section-title">Cuidados para tu nuevo Microdermal</h2>
+        <p>Gracias por elegir nuestro estudio para tu MICRODERMAL. Para asegurar una curación segura y rápida, sigue estos consejos:</p>
+
+        <div class="two-column mt-4">
+            <div>
+                <h3>Instrucciones de cuidado</h3>
+                <ul>
+                    <li>Limpia el micro dermal con jabón suave y agua tibia 2-3 veces al día.</li>
+                    <li>Seca el micro dermal con una toalla limpia después de lavarlo.</li>
+                    <li>Aplica un apósito o vendaje para proteger el micro dermal.</li>
+                    <li>Evita tocar o manipular el micro dermal innecesariamente.</li>
+                </ul>
+
+                <h3>Precauciones</h3>
+                <ul>
+                    <li>No rasques ni toques el micro dermal, ya que esto puede causar infecciones o rechazo.</li>
+                    <li>Evita utilizar productos químicos o abrasivos en el área.</li>
+                    <li>No te bañes en agua caliente ni utilices secadora de pelo cerca del micro dermal.</li>
+                    <li>No uses ropa ajustada que pueda irritar el micro dermal.</li>
+                </ul>
+
+                <h3>Signos de alarma</h3>
+                <ul>
+                    <li>Dolor o sensibilidad en el área del micro dermal.</li>
+                    <li>Enrojecimiento o hinchazón en el área del micro dermal.</li>
+                    <li>Secreción de pus o líquido en el área del micro dermal.</li>
+                    <li>Fiebre o escalofríos.</li>
+                      <h3>Tabla de cicatrizado</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fase</th>
+                            <th>Tiempo / Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Inicial</td>
+                            <td>0-3 días | Enrojecimiento, hinchazón y secreción de líquido.</td>
+                        </tr>
+                        <tr>
+                            <td>Cicatrizado</td>
+                            <td>3-7 días | Comienza a formarse una costra y el enrojecimiento disminuye.</td>
+                        </tr>
+                        <tr>
+                            <td>Curación</td>
+                            <td>7-14 días | La costra se seca y el micro dermal comienza a sanar.</td>
+                        </tr>
+                        <tr>
+                            <td>Maduración</td>
+                            <td>2-6 semanas | El micro dermal se vuelve más estable y la piel se regenera.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Consejos para la recuperación</h3>
+                <ul>
+                    <li>Mantén el micro dermal limpio y seco.</li>
+                    <li>Aplica un apósito o vendaje para proteger el micro dermal.</li>
+                    <li>Evita realizar actividades que puedan irritar el micro dermal.</li>
+                    <li>Si hay dolor o inflamación, sigue las indicaciones de tu médico.</li>
+                </ul>
+
+                <h3>Información sobre el proceso de cicatrizado</h3>
+                <ul>
+                    <li>El proceso de cicatrizado puede tardar varias semanas o meses.</li>
+                    <li>La cicatrización puede variar de persona a persona.</li>
+                </ul>
+
+                <h3>Materiales recomendados</h3>
+                <ul>
+                    <li>Titanio (hipoalergénico y resistente)</li>
+                    <li>Acero quirúrgico (resistente y fácil de limpiar)</li>
+                    <li>Oro 14k/18k (resistente y elegante)</li>
+                </ul>
+
+                <h3>Materiales a evitar</h3>
+                <ul>
+                    <li>Plata (puede generar reacciones alérgicas y decoloración)</li>
+                    <li>Cobre (puede causar irritación y reacciones alérgicas)</li>
+                    <li>Níquel (puede causar reacciones alérgicas y problemas de salud)</li>
+                </ul>
+
+                <h3>Nota</h3>
+                <p>Recuerda que cada MICRODERMAL es único y puede requerir cuidados específicos. Si tienes alguna pregunta o inquietud, no dudes en consultar a nuestro estudio.</p>
+            </div>
+        </div>
+    </section>
     </main>
 
     <!-- ===== FOOTER ===== -->
@@ -176,6 +271,14 @@
             </div>
         </div>
     </footer>
+    
+        <!-- Botón flotante de WhatsApp -->
+<div class="whatsapp-float" id="whatsappFloat">
+    <a href="https://wa.me/56954165536?text=Hola%20Kuro%20Neko%20Tattoo%20y%20Piercing%20quiero%20más%20información%20sobre%20tus%20servicios%20" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</div>
+<div class="whatsapp-tooltip" id="whatsappTooltip">¡Contáctanos por WhatsApp!</div>
 
     <!-- ===== SCRIPTS ===== -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -236,6 +339,28 @@
                 }
             });
         });
+
+        // Control para el tooltip de WhatsApp en dispositivos táctiles
+    const whatsappFloat = document.getElementById('whatsappFloat');
+    const whatsappTooltip = document.getElementById('whatsappTooltip');
+    let tooltipTimeout;
+    
+    // Mostrar tooltip al tocar en dispositivos móviles
+  whatsappFloat.addEventListener('touchstart', function() {
+    clearTimeout(tooltipTimeout);
+    whatsappTooltip.style.opacity = '1';
+    whatsappTooltip.style.visibility = 'visible';
+    whatsappTooltip.style.transform = 'translateY(0)';
+});
+    
+    // Ocultar tooltip después de un tiempo
+    whatsappFloat.addEventListener('touchend', function() {
+        tooltipTimeout = setTimeout(function() {
+            whatsappTooltip.style.opacity = '0';
+            whatsappTooltip.style.visibility = 'hidden';
+            whatsappTooltip.style.transform = 'translateY(10px)';
+        }, 2000);
+    });
     </script>
 </body>
 </html>
